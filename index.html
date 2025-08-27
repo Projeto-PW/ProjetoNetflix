@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- css externo -->
-         <link rel="stylesheet" href="./src/css/estilo.css">
-        <title>Projeto Netflix</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS EXTERNO -->
+     <link rel="stylesheet" href="./src/css/estilo.css">   
+    <title>Netflix</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho-nav">
+            <img src="" alt="logo" class="logo">
+            <ul class="cabecalho-menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Minha Lista</a></li>
+          </ul>
+     </nav>
+    </header>
 
-    <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
-        <!-- js externo -->
-         <script src="./src/js/script.js"></script>
-    </body>
+     <main class="principal">
+
+        <section class="banner">
+            <div class="banner-conteudo">
+                <h1 class="banner-titulo">Título do Filme/Série</h1>
+                <p class="banner-descricao">Descrição do Filme/Série</p>
+                <button class="banner-assistir">Assitir</button>
+                <button class="btn-lista">Minha Lista</button>
+            </div>
+        </section>
+        <section class="sessao-filmes">
+            <h2 class="filme-titulo">Populares na Netflix</h2>
+            <div class="carrossel">
+                <div class="carrossel-lista">
+                    <div class="carrossel-item"><img src=""  alt="filme 1"></div>
+                     <div class="carrossel-item"><img src=""  alt="filme 2"></div>
+                     <div class="carrossel-item"><img src=""  alt="filme 3"></div>
+                     <div class="carrossel-item"><img src=""  alt="filme 4"></div>
+                     <div class="carrossel-item"><img src=""  alt="filme 5"></div>   
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    
+  
+    
+    <!-- JAVASCRIPT EXTERNO -->
+     <script src="./src/js/script.js"></script>
+</body>
 </html>
