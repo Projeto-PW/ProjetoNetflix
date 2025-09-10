@@ -63,7 +63,7 @@ body{
 
 .banner::before{
     content: "";
-    position: absolute;
+    position: absolute;  /*absolute deixa a imagem sobrepor relative deixa relatico ao ouytro elemento*/
     top: 0;
     left: 0;
     width: 100%;
