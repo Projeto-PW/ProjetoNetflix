@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.logo {
+    width: 100px;
+    height: 70px;
+    transition: 1s ease;
+}
+.logo:hover {
+    transform: translateX(5%) scale(115%);
+}
+.cabecalho {
+    background: black;
+    padding: 20px;
+}
+.cabecalho-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho-menu {
+    list-style: none;
+    display: flex;
+}
+.cabecalho-menu li{
+    margin-left: 20px;
+}
+.cabecalho-menu a {
+    color: white;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.cabecalho-menu a:hover {
+    margin-bottom: 50px;
+    color: #e50914;
+}
+#titulo {
+    background: #1a1d1f;
+    width: 100%;
+    height: 200px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#titulo img {
+    width: 400px;
+    height: 300px;
+    margin-top: -45px;
+}
+#historia {
+    width: 100%;
+    min-height: 600px;
+    background: #808080;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+#texto-historia {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+#texto-historia h1 {
+    color: rgb(37, 37, 116);
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#texto-historia p {
+    font-size: 17px;
+    color: #1a1d1f;
+}
+#imagens-historia {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imagens-historia img {
+    height: 600px;
+}
+.historia-personagem {
+    width: 100%;
+    min-height: 555px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #1a1d1f;
+    padding: 20px 0;
+}
+.historia-personagem p {
+    color: #fff;
+    font-size: 17px;
+    text-align: justify;
+}
+.historia-personagem h1 {
+    color: rgb(37, 37, 116);
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.historia-personagem h3 {
+    color: #4c8755;
+    margin-top: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+}
+.historia-personagem img {
+    width: 230px;
+    border: 2px solid #ccc;
+}
+.texto-personagem {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#melhores-momentos {
+    width: 100%;
+    background-color: #1a1d1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+#melhores-momentos h1 {
+    color: rgb(197, 6, 6);
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 30px;
+}
+#melhores-momentos article {
+    display: flex;
+    width: 100%;
+}
+#melhores-momentos article div:first-child {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+#melhores-momentos h2 {
+    font-size: 2rem;
+}
+.videos-momentos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+.videos-momentos {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+.videos-momentos video {
+    width: 100%;
+    height: 100%;
+}
+#episodio-completo {
+    width: 100%;
+    height: 150px;
+    background: #e50914;
+    display: grid;
+    place-items: center;
+}
+#episodio-completo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+#episodio-completo a:hover {
+    color: black;
+    background: #fff;
+    border-color: black;
+    text-decoration: none;
+}
+@media(max-width: 768px) {
+    #melhores-momentos h2 {
+        font-size: 1.5rem;
+    }
+}

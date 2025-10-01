@@ -1,106 +1,110 @@
-/* perfis */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-body{
+body {
+    background: black;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.cabecalho{
-    width: 100%;
-    height: 70px;
-    background: #000;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    justify-content: space-between;
-}
-
-.logo{
-    width: 100px;
-    height: 70px;
-    transition: 0.5s ease-in-out;
-}
-
-.logo:hover{
-    transform: scale(110%);
-}
-
-
-.cabecalho-menu{
-    display: flex;
-    gap: 10px;
-}
-
-.cabecalho-menu li{
-    list-style: none;
-}
-
-.cabecalho-menu li a{
-    text-decoration: none;
     color: #fff;
 }
 
-.cabecalho-menu  a:hover{
-    color: red;
-    transition:0.3s;
+/* PERFIS */
+header {
+    width: 100%;
+    height: 70px;
+    background:#1A1D1F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
 }
-
-.btn{
-    width: 100px;
-    height: 40px;
-    font-weight: bold;
+.logo {
+    width: 80px;
+    height: 56px;
+    transition: 1s ease;
+}
+.logo:hover {
+    transform: translateX(5%) scale(115%);
+}
+.cabecalho {
+    background: black;
+    padding: 20px;
+}
+.cabecalho-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.cabecalho-menu {
+    list-style: none;
+    display: flex;
+}
+.cabecalho-menu li{
+    margin-left: 20px;
+}
+.cabecalho-menu a {
+    color: white;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.cabecalho-menu a:hover {
+    margin-bottom: 50px;
+    color: #e50914;
+}
+.btn {
+    width:100px;
+    height:40px;
+    font-weight:bold;
     border-radius: 20px;
-    background: #f2a341;
-    color: #000;
+    background:#F2A341;
+    color:#000;
     border: none;
     cursor: pointer;
 }
 
+/* Seção de Perfis */
 #perfil{
-    width: 100%;
-    min-height: 555px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-    padding: 20px 0;
+    width:100%;
+    min-height:555px; /* Usado min-height para flexibilidade */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+    padding: 20px 0; /* Adicionado para dar um respiro */
 }
-
 .perfis-container{
-    width: 90%;
-    max-width:900px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    width:90%;
+    max-width: 900px; /* Definido um máximo para evitar quebra em telas muito grandes */
+    display:flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content:center; /* Centraliza os itens */
+    gap: 20px; /* Espaço entre os cards */
 }
-
 .perfil-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     text-align: center;
+    transition: .5s;
 }
-
+.perfil-card:hover {
+    transform: scale(110%);
+}
 .perfil-card h3{
-    color: #fff;
-    font-size: 20px;
-    margin-top: 10px;
+    color:#fff;
+    font-size:20px;
+    margin-top: 10px; /* Espaço entre a imagem e o nome */
 }
-
 .perfil-img{
-    width: 120px;
-    height: 120px;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    object-fit: cover;
+    width:120px;
+    height:120px;
+    border:2px solid #fff;
+    border-radius:100%;
+    object-fit: cover; /* Recorta a imagem para preencher o contêiner sem distorcê-la */
 }
-
-p.perfil-img-link{
+.perfil-img-link {
     display: block;
     width: 120px;
     height: 120px;

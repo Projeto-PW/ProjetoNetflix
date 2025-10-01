@@ -1,46 +1,47 @@
-// criando um array de objeto com a imagens do banner
+// CRIANDO UM ARRAY DE OBJETO COM AS IMAGENS E INFORMAÇÕES DO BANNER
 
-const bannerItens =[
-    {
-        imagem:"./src/assets/Game1.jpg",
-        titulo:"Caçador de bruxas",
-        descricao:"caça bruxas com varinhas",
-    },
-    {
-        imagem:"./src/assets/Game2.jpg",
-        titulo:"comedor dem Códigos",
-        descricao:"lancha funções como cafe da tarde",
-    },
-    {
-        imagem:"./src/assests/Game2.jpg",
-        titulo:"Coach city- Treino para vida",
-        descricao:"Com grandes códigos vem grandes projetos",
+const bannerItems = [
+  {
+    imagem:"./src/assets/Game1.jpg",
+    titulo:"Caçador de Bruxas",
+    descricao:"Caça bruxas com varinhas",
+  },
 
-    }
+  {
+    imagem:"./src/assets/Game2.jpg",
+    titulo:"Comedor de Códigos",
+    descricao:"Lancha funções como café da tarde",
+  },
 
+  {
+    imagem:"./src/assets/Game3.jpg",
+    titulo:"Coach City- Treino pra vida",
+    descricao:"Com grandes códigos vem grandes projetos",
+  }
 ];
 
-// Declarando as variaveis elementos com DOM(Document Object Model)
+//DECLARANDO AS VARIÁVEIS ELEMENTOS COM DOM(DOCUMENT OBJECT MODEL)
 
-const tempo= 5000; //tempo em milisegundos
+const tempo = 5000; //TEMPO EM MILISSEGUNDOS
 const elementoBanner = document.querySelector(".banner");
-const elementoTitulo = document.querySelector(".banner-titulo");
+const elementoTitulo = document.querySelector(".banner-titulo"); 
 const elementoDescricao = document.querySelector(".banner-descricao");
-let i = 0; // inicio da contagem das imagens
 
-//  Criando a função slideShow
-function slideShow(){
+let i = 0; // Inicio da contagem das imagens
 
-    // ALTERA A IMAGEM DO FUNDO DO BANNER
-    elementoBanner.style.backgroundImage =`url(${bannerItens[i].imagem})`;
-    elementoTitulo.textContent =bannerItens[i].titulo;
-    elementoDescricao.textContent = bannerItens[i].descricao;
+// Criando a função slideshow
+
+function slideShow() {
+    //ALTERA A IMAGEM DO FUNDO DO BANNER
+    elementoBanner.style.backgroundImage = `url(${bannerItems[i].imagem})`;
+    elementoTitulo.textContent = bannerItems[i].titulo;
+    elementoDescricao.textContent = bannerItems[i].descricao
 
     i++;
-    if( i >= bannerItens.length){
+    if(i >= bannerItems.length){
         i=0;
     }
     setTimeout(slideShow, tempo);
-}
 
+}
 slideShow();

@@ -1,94 +1,86 @@
-*{
-    margin: 0;
+/*  RESET BÁSICO */
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: black;
+body {
+    background: black;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
 }
-
-.logo{
+.logo {
     width: 100px;
     height: 70px;
-    transition: 0.5s ease-in-out;
+    transition: 1s ease;
 }
-
-.logo:hover{
-    transform: scale(120%); 
+.logo:hover {
+    transform: translateX(5%) scale(115%);
 }
-
-.cabecalho{
-    background: #000;
+.cabecalho {
+    background: black;
     padding: 20px;
 }
-
-.cabecalho-nav{
+.cabecalho-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.cabecalho-menu{
+.cabecalho-menu {
     list-style: none;
     display: flex;
 }
 .cabecalho-menu li{
     margin-left: 20px;
 }
-
-.cabecalho-menu a{
-    color: #fff;
+.cabecalho-menu a {
+    color: white;
     text-decoration: none;
+    transition: .5s ease;
 }
-
-.cabecalho-menu a:hover{
-    transition: 0.5s;
+.cabecalho-menu a:hover {
+    margin-bottom: 50px;
     color: #e50914;
 }
-
-.banner{
-    background-image: url(../assets/Game6.jpg);
+.banner {
+    background-image: url(../assets/Game3.jpg);
     background-size: cover;
     height: 500px;
     background-position: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    align-items:center;
     position: relative;
 }
-/* PSEUDO ELEMENTO REALIZA UMA AÇÃO ANTES E DEPOIS */
-
-.banner::before{
+/* Pseudo Elemento. Realiza uma ação antes ou depois */
+.banner::before {
     content: "";
-    position: absolute;  /*absolute deixa a imagem sobrepor relative deixa relatico ao ouytro elemento*/
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 1; /*garante que não sofra sobreposição na imagem*/
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Garante que não sofra sobreposição na imagem */
 }
 
-.banner-conteudo{
+.banner-conteudo {
     width: 600px;
     position: relative;
     z-index: 2;
 }
-
-.banner-titulo{
+.banner-titulo {
     font-size: 3em;
     margin-bottom: 20px;
 }
 
-.banner-descricao{
+.banner-descricao {
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.banner-assistir{
+.banner-assistir {
     background: #e50914;
     padding: 10px 30px;
     border-radius: 20px;
@@ -97,67 +89,64 @@ body{
     margin: 0 10px;
 }
 
-.banner-assistir:hover{
-    box-shadow: 2px 2px 8px #000;
-    transition: 0.5s;
-    /* transform: translateX(5px);  */
+.banner-assistir:hover {
+    box-shadow: 5px 5px 8px #000;
+    transition: .5s;
+    /* transform: translateX(5px); */
     /* transform: rotate(360deg); */
     transform: scale(110%);
 }
 
-.sessao-filmes{
+.sessao-filmes {
     padding: 20px;
 }
-
-.filme-titulo{
+.filme-titulo {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.carrossel{
+.carrossel {
     position: relative;
     overflow: hidden;
 }
-
-.carrossel img{
+.carrossel img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 10px;
-    box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
-.carrossel-lista{
+.carrossel-lista {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform .5s ease-in-out;
 }
 
-.carrossel-item{
+.carrossel-item {
     width: 200px;
-    padding: 8px;
+    padding: 10px;
 }
 
-.btn-carrossel{
+.btn-carrossel {
     position: absolute;
-    top:50%;
+    top: 50%;
     transition: translateY(-50%);
     border: none;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     cursor: pointer;
-    color: #fff;
 }
 
-.btn-anterior{
+.btn-anterior {
     left: 0;
 }
 
-.btn-proximo{
+.btn-proximo {
     right: 0;
 }
 
-footer{
-    background: black;
+footer {
+    background-color: #000;
     padding: 20px;
     text-align: center;
 }
