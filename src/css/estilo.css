@@ -107,10 +107,10 @@ body {
 
 .carrossel {
     position: relative;
-    overflow: hidden;
+    verflow: hidden;
 }
 .carrossel img {
-    width: 100%;
+    width: 110px;
     height: auto;
     display: block;
     border-radius: 10px;
@@ -118,12 +118,14 @@ body {
 }
 
 .carrossel-lista {
+    width: 100%;
     display: flex;
     transition: transform .5s ease-in-out;
+    o
 }
 
 .carrossel-item {
-    width: 200px;
+    width: 130px;
     padding: 10px;
 }
 
@@ -132,7 +134,7 @@ body {
     top: 50%;
     transition: translateY(-50%);
     border: none;
-    background: rgba(0, 0, 0, 0.5);
+    background:#fff;
     padding: 10px;
     cursor: pointer;
 }
